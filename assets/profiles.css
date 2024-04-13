@@ -1,0 +1,20 @@
+.profile {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.headshot {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.info {
+    overflow: hidden;
+}
+
+.address {
+    font-style: italic;
+}
