@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/*
+	CSS Document
+	LCARS Image Frame - Classic Theme
+	Last modified 2024 Mar 17
+	By Jim Robertus www.thelcars.com
+*/
+
+:root {
+	--image-border-color: #fba;
+	--primary-color: #f70;
+	--secondary-color: #94f;
+	--accent-color: #fba;
+	--spacers: .65rem;
+	--frame-height: 40px;
+}
+
+@media (max-width: 780px) {
+	:root {
+		--spacers: .5rem;
+		--frame-height: 25px;
+	}
+}
+
+.image-frame {
+	margin: 2rem auto;
+	width: fit-content;
+	background: linear-gradient(var(--primary-color) 56%, var(--secondary-color) 44%);
+	border-radius: 50px 25px 0 50px;
+	position: relative;
+}
+
+.image-frame::before {
+	content: '';
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	position: absolute;
+	right: 0;
+	top: 0;	
+}
+
+.image-frame::after {
+	content: '';
+	display: block;
+	border-top: var(--spacers) solid black;
+	border-bottom: var(--spacers) solid black;
+	width: 45px;
+	height: 80px;
+	background-color: var(--secondary-color);
+	position: absolute;
+	left: 0;
+	top: 56%;	
+}
+
+.imgf-title {
+	display: flex;
+	justify-content: flex-end;
+	height: 40px;
+	border-right: 40px solid var(--secondary-color);
+	border-radius: 25px 100vh 100vh 0;
+	position: relative;
+	z-index: 1;
+	text-align: right;
+}
+
+.h4-wrapper {
+	width: fit-content;
+	height: var(--frame-height);
+	background-color: black;
+	border-right: var(--spacers) solid black;
+}
+
+.imgf-title h4 {
+	margin-top: -3px;
+	width: fit-content;
+	background-color: black;
+	padding-left: var(--spacers);
+	font-size: 41px;
+	color: var(--accent-color);
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+.imgf-image-body {
+	margin-left: 45px;
+	background-color: black;
+	width: fit-content;
+	padding: 1rem;
+	border-radius: 28px 0 0 28px;
+
+}
+
+.image-holder {
+	width: fit-content;
+	padding: 1rem;
+	border: 2px solid var(--image-border-color);
+	border-radius: 20px;
+}
+
+.image-holder img {
+	display: block;
+}
+
+.imgf-base {
+	display: grid;
+	grid-template-columns: 20% 13% 35px 15% 1fr;
+	margin-left: 80px;
+	border-left: var(--spacers) solid black;
+
+}
+
+.imgf-block-1 {
+	height: var(--frame-height);
+	background-color: var(--accent-color);
+	border-right: var(--spacers) solid black;
+}
+
+.imgf-block-2 {
+	height: var(--frame-height);
+	background-color: var(--secondary-color);
+	border-right: var(--spacers) solid black;
+}
+
+.imgf-block-3 {
+	height: var(--frame-height);
+	background-color: black;
+	border-right: 10px solid var(--secondary-color);
+	border-left: 10px solid var(--accent-color);
+}
+
+.imgf-block-4 {
+	height: var(--frame-height);
+	background-color: var(--secondary-color);
+	border-left: var(--spacers) solid black;
+}
+
+.imgf-block-5 {
+	height: var(--frame-height);
+	background-color: black;
+}
+
+@media (max-width: 780px) {
+
+	.image-frame {
+		border-radius: 40px 25px 0 40px;
+	}
+
+	.image-frame::after {
+		width: 25px;
+		height: 60px;
+		top: 50%;
+	}
+
+	.imgf-title {
+		height: 25px;
+		border-right: 24px solid var(--secondary-color);
+	}
+
+	.h4-wrapper {
+		width: fit-content;
+		height: var(--frame-height);
+		background-color: black;
+	}
+
+	.imgf-title h4 {
+		margin-top: -2px;
+		font-size: 28px;
+		line-height: 25px;
+	}
+
+	.imgf-image-body {
+		margin-left: 25px;
+		padding: .75rem;
+		border-radius: 20px 0 0 20px;
+	}
+
+	.image-holder {
+		padding: .75rem;
+	}
+}
