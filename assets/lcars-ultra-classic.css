@@ -886,7 +886,8 @@ a:active {
 .row-5,
 .row-6,
 .row-7,
-.row-8 {
+.row-8,
+.row-9 {
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
@@ -936,6 +937,11 @@ a:active {
 	animation-delay: .8s;
 }
 
+.data-cascade .row-9 {
+	animation: colorchange 2s infinite;
+	animation-delay: .9s;
+}
+
 /* Niagara pattern */
 
 .data-cascade#niagara .row-1 {
@@ -976,6 +982,11 @@ a:active {
 .data-cascade#niagara .row-8 {
 	animation: colorchange 2s infinite;
 	animation-delay: .8s;
+}
+
+.data-cascade#niagara .row-9 {
+	animation: colorchange 2s infinite;
+	animation-delay: .9s;
 }
 
 /* Frozen pattern */
@@ -1019,6 +1030,11 @@ a:active {
 .data-cascade#frozen .row-8 {
 	animation: none;
 	color: #f5f6fa;
+}
+
+.data-cascade#frozen .row-9 {
+	animation: none;
+	color: #faf0e6;
 }
 
 .dc1,
@@ -1168,6 +1184,42 @@ nav a,
 #b-five {
 	background-color: #d44;
 }
+
+#b-facebook {
+	background-color: #1877F2;
+	/* Facebook's primary color */
+}
+
+#b-threads {
+	background-color: #FFFFFF;
+	/* Threads, also a social media by Meta, similar dark theme */
+}
+
+#b-fediverse {
+	background-color: #4A5A70;
+	/* Generic Fediverse instance, a mid-dark blue-grey */
+}
+
+#b-twitter {
+	background-color: #1DA1F2;
+	/* Twitter's primary blue color */
+}
+
+#b-bluesky {
+	background-color: #1DA1F2;
+	/* Blue Sky, similar to Twitter */
+}
+
+#b-instagram {
+	background-color: #E1306C;
+	/* Instagram's vibrant pink */
+}
+
+#b-youtube {
+	background-color: #FF0000;
+	/* YouTube's iconic red */
+}
+
 
 nav a:hover {
 	animation: none;
